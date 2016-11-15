@@ -1,0 +1,22 @@
+{
+  "name": "trains_elixir",
+  "version": "1.0.0",
+  "description": "train board",
+  "main": "brunch-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "babel-preset-react": "^6.16.0",
+    "css-brunch": "^2.6.1",
+    "javascript-brunch": "^2.0.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

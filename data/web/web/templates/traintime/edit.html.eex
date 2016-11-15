@@ -1,0 +1,6 @@
+<h2>Edit traintime</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: traintime_path(@conn, :update, @traintime) %>
+
+<%= link "Back", to: traintime_path(@conn, :index) %>

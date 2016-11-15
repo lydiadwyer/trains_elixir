@@ -1,0 +1,59 @@
+<%= form_for @changeset, @action, fn f -> %>
+  <%= if @changeset.action do %>
+    <div class="alert alert-danger">
+      <p>Oops, something went wrong! Please check the errors below.</p>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= label f, :TimeStamp, class: "control-label" %>
+    <%= number_input f, :TimeStamp, class: "form-control" %>
+    <%= error_tag f, :TimeStamp %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :Origin, class: "control-label" %>
+    <%= text_input f, :Origin, class: "form-control" %>
+    <%= error_tag f, :Origin %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :Trip, class: "control-label" %>
+    <%= text_input f, :Trip, class: "form-control" %>
+    <%= error_tag f, :Trip %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :Destination, class: "control-label" %>
+    <%= text_input f, :Destination, class: "form-control" %>
+    <%= error_tag f, :Destination %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :ScheduledTime, class: "control-label" %>
+    <%= number_input f, :ScheduledTime, class: "form-control" %>
+    <%= error_tag f, :ScheduledTime %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :Lateness, class: "control-label" %>
+    <%= number_input f, :Lateness, class: "form-control" %>
+    <%= error_tag f, :Lateness %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :Track, class: "control-label" %>
+    <%= number_input f, :Track, class: "form-control" %>
+    <%= error_tag f, :Track %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :Status, class: "control-label" %>
+    <%= text_input f, :Status, class: "form-control" %>
+    <%= error_tag f, :Status %>
+  </div>
+
+  <div class="form-group">
+    <%= submit "Submit", class: "btn btn-primary" %>
+  </div>
+<% end %>

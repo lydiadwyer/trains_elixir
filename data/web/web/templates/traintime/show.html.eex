@@ -1,0 +1,48 @@
+<h2>Show traintime</h2>
+
+<ul>
+
+  <li>
+    <strong>Timestamp:</strong>
+    <%= @traintime."TimeStamp" %>
+  </li>
+
+  <li>
+    <strong>Origin:</strong>
+    <%= @traintime."Origin" %>
+  </li>
+
+  <li>
+    <strong>Trip:</strong>
+    <%= @traintime."Trip" %>
+  </li>
+
+  <li>
+    <strong>Destination:</strong>
+    <%= @traintime."Destination" %>
+  </li>
+
+  <li>
+    <strong>Scheduledtime:</strong>
+    <%= @traintime."ScheduledTime" %>
+  </li>
+
+  <li>
+    <strong>Lateness:</strong>
+    <%= @traintime."Lateness" %>
+  </li>
+
+  <li>
+    <strong>Track:</strong>
+    <%= @traintime."Track" %>
+  </li>
+
+  <li>
+    <strong>Status:</strong>
+    <%= @traintime."Status" %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: traintime_path(@conn, :edit, @traintime) %>
+<%= link "Back", to: traintime_path(@conn, :index) %>

@@ -1,0 +1,27 @@
+<h2>Train Dashboard</h2>
+<h3><%= DateTime.utc_now() %></h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Train #:</th>
+      <th>Scheduled time:</th>
+      <th>Destination:</th>
+      <th>Track:</th>
+      <th>Status:</th>
+      <th>Late By:</th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for traintime <- @traintime do %>
+    <tr>
+      <td><%= traintime."Trip" %></td>
+      <td><%= traintime."ScheduledTime" %></td>
+      <td><%= traintime."Destination" %></td>
+      <td><%= traintime."Track" %></td>
+      <td><%= traintime."Status" %></td>
+      <td><%= traintime."Lateness" %></td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
